@@ -11,6 +11,7 @@ class Home extends Controller
     public function index(){
         $data['category'] = Category::withCount(['getCatCount'])->get();
         $data['article'] = Article::get();
-        return view('front.home', $data);
+
+        return view('front.home', $dadsta);
     }
 }
